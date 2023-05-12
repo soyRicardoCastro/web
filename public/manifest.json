@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qwik-project-name",
-  "short_name": "Welcome to Qwik",
+  "name": "Ricardo Castro: Web Developer",
+  "short_name": "Ricardo Castro: Web Developer",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "A Qwik project app."
+  "background_color": "#000",
+  "description": "Explore the project portfolio of full-stack web developer Ricardo Castro. Discover his expertise in multiple programming languages and frameworks, and learn how he can help create the perfect web solution for you."
 }

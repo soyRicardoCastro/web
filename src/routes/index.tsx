@@ -1,12 +1,34 @@
 import { component$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import type { DocumentHead } from "@builder.io/qwik-city";
+
+const navigation = [
+  {
+    name: "Projects",
+    href: "/projects",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
 
 export default component$(() => {
   return (
     <>
       <div class="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
         <nav class="my-16 animate-fade-in">
-          <ul class="flex items-center justify-center gap-4"></ul>
+          <ul class="flex items-center justify-center gap-4">
+            {navigation.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                class="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </ul>
         </nav>
         <div class="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 

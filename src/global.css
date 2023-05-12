@@ -6,7 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "CalSans Semibold";
+  src: url("../public/fonts/CalSans-SemiBold.ttf");
+  font-weight: 500;
+}
+
 @layer base {
+  :root {
+    --font-calsans: "CalSans Semibold";
+    --font-inter: "Inter";
+  }
   .text-edge-outline {
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }

@@ -52,6 +52,7 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.15",
     "framer-motion": "^10.12.10"
   }
 }
